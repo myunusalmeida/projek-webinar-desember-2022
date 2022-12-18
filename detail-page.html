@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor — Southeast Asia&#x27;s Leading Travel Platform</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/icons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a href="." class="navbar-brand fw-semibold text-primary">Outdoor</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-0 ms-md-5" id="navbarToggle">
+          <ul
+            class="navbar-nav align-items-start align-items-md-center mb-3 mb-md-0 gap-3"
+          >
+            <div class="nav-item d-none d-md-block">
+              <div
+                style="
+                  width: 1px;
+                  height: 20px;
+                  background-color: #aeaeae;
+                  content: '';
+                "
+              ></div>
+            </div>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Paket Travel</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto gap-3">
+            <ul class="nav-item dropdown ps-0">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle d-flex align-items-center gap-2"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  src="https://ui-avatars.com/api/?name=Muhammad Yunus"
+                  alt=""
+                  class="avatar rounded-circle"
+                  style="width: 26px; height: 26px; object-fit: cover"
+                />
+                <p class="m-0">Muhammad Yunus</p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    href="{{ route('logout') }}"
+                    class="dropdown-item d-flex align-items-center justify-content-between gap-2"
+                    onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"
+                  >
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="detail-page pt-3">
+      <div class="container">
+        <!-- images area -->
+        <div class="row mt-3">
+          <div class="col-md-9">
+            <img
+              src="assets/images/travel-4.jpg"
+              alt=""
+              class="img-detail-hero rounded-3 mb-3 mb-md-0"
+            />
+          </div>
+          <div class="col-md-3 d-none d-md-block">
+            <div class="img-detail-child d-flex flex-column gap-3">
+              <img src="assets/images/travel-1.jpg" alt="" class="rounded-3" />
+              <img src="assets/images/travel-2.jpg" alt="" class="rounded-3" />
+              <img src="assets/images/travel-3.jpg" alt="" class="rounded-3" />
+            </div>
+          </div>
+        </div>
+
+        <!-- description area -->
+        <div class="row mt-4">
+          <div class="col-md-7">
+            <p class="text-secondary m-0 d-flex align-items-center gap-2 mb-3">
+              <i class="bx bx-map text-danger"></i> Tengger, Probolinggo, Jawa
+              Timur.
+            </p>
+            <h2 class="section-title text-dark mb-3">Bromo Adventure Family</h2>
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <p class="text-secondary m-0">Max 8 Guest</p>
+              &#8226;
+              <p class="text-secondary m-0">4 Hari</p>
+              &#8226;
+              <p class="text-secondary m-0">Family Adventure</p>
+            </div>
+            <p class="text-secondary">
+              Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut
+              Kaldera Tengger, adalah sebuah gunung berapi aktif di Jawa Timur,
+              Indonesia. Gunung ini memiliki ketinggian 2.329 meter di atas
+              permukaan laut dan berada dalam empat wilayah kabupaten, yakni
+              Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan
+              Kabupaten Malang. <br />
+              <br />Gunung Bromo terkenal sebagai objek wisata utama di Jawa
+              Timur. Sebagai sebuah objek wisata, Bromo menjadi menarik karena
+              statusnya sebagai gunung berapi yang masih aktif. Gunung Bromo
+              termasuk dalam kawasan Taman Nasional Bromo Tengger Semeru.Nama
+              Bromo berasal dari nama dewa utama dalam agama Hindu, Brahma.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="card rounded-3 shadow-sm border-light mt-3 mt-md-0">
+              <div class="card-body p-3 p-md-4">
+                <h4 class="text-dark fw-semibold">
+                  Rp.
+                  <span id="price">200,000</span>
+                  <span class="text-secondary fs-6 fw-normal">/Orang</span>
+                </h4>
+                <hr class="my-4" />
+                <div>
+                  <label for="#" class="mb-1 text-dark fs-7 fw-semibold"
+                    >Jumlah Orang</label
+                  >
+                  <div
+                    class="d-flex align-items-center justify-content-between gap-3 mt-2"
+                  >
+                    <input
+                      type="number"
+                      class="form-control shadow-none"
+                      id="inputCount"
+                      value="1"
+                      readonly
+                    />
+                    <button
+                      class="btn btn-dark btn-sm rounded-circle d-flex align-items-center justify-content-center disabled"
+                      id="countMinus"
+                      style="width: 26px; height: 26px"
+                    >
+                      <i class="bx bx-minus"></i>
+                    </button>
+                    <button
+                      class="btn btn-dark btn-sm rounded-circle d-flex align-items-center justify-content-center"
+                      id="countPlus"
+                      style="width: 26px; height: 26px"
+                    >
+                      <i class="bx bx-plus"></i>
+                    </button>
+                  </div>
+                </div>
+                <hr class="my-4" />
+                <div
+                  class="d-flex align-items-center justify-content-between mb-2"
+                >
+                  <p class="text-secondary m-0">
+                    Rp. 200.000 x <span id="countPeople">1</span> Orang
+                  </p>
+                  <p class="text-dark m-0" id="countPeopleandprice">
+                    Rp. <span id="countPeopleWithPrice">200,000</span>
+                  </p>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between mb-2"
+                >
+                  <p class="text-secondary m-0">Diskon Minggu Ini</p>
+                  <p class="text-dark m-0">
+                    Rp. -<span id="countDiscount">50,000</span>
+                  </p>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between mb-2"
+                >
+                  <p class="text-secondary m-0">Service Fee</p>
+                  <p class="text-dark m-0">
+                    Rp. <span id="countFee">25,000</span>
+                  </p>
+                </div>
+                <hr class="my-4" />
+                <div
+                  class="d-flex align-items-center justify-content-between mb-4"
+                >
+                  <p class="text-secondary m-0">Total</p>
+                  <p class="text-primary fw-semibold m-0">
+                    Rp. <span id="total">200,000</span>
+                  </p>
+                </div>
+                <button
+                  class="btn btn-primary rounded-pill w-100 py-3 px-4"
+                  id="reservationButton"
+                >
+                  Pesan Sekarang
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-5">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-md-6">
+            <a
+              href="."
+              class="fs-5 fw-semibold text-primary text-decoration-none d-inline-block mb-3"
+              >Outdoor</a
+            >
+            <p class="text-secondary m-0">
+              Copyright &copy; 2022 Outdoor Travel. All Right Reserved.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="d-flex align-items-center justify-content-end gap-3">
+              <a
+                href="#"
+                class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-2"
+                style="width: 46px; height: 46px"
+              >
+                <i class="bx bxl-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-2"
+                style="width: 46px; height: 46px"
+              >
+                <i class="bx bxl-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-2"
+                style="width: 46px; height: 46px"
+              >
+                <i class="bx bxl-pinterest"></i>
+              </a>
+              <a
+                href="#"
+                class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-2"
+                style="width: 46px; height: 46px"
+              >
+                <i class="bx bxl-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/detail-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+.travel-lists {
+    .card {
+        border-color: #d4d4d4;
+        transition: .3s;
+
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        &:hover {
+            box-shadow: 0px 10px 65px -19px rgba(156,156,156,0.75);
+            transform: translateY(-5px);
+        }
+    }
+}

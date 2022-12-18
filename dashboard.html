@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor — Southeast Asia&#x27;s Leading Travel Platform</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/icons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a href="." class="navbar-brand fw-semibold text-primary">Outdoor</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-0 ms-md-5" id="navbarToggle">
+          <ul
+            class="navbar-nav align-items-start align-items-md-center mb-3 mb-md-0 gap-3"
+          >
+            <div class="nav-item d-none d-md-block">
+              <div
+                style="
+                  width: 1px;
+                  height: 20px;
+                  background-color: #aeaeae;
+                  content: '';
+                "
+              ></div>
+            </div>
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a href="dashboard-paket-travel.html" class="nav-link"
+                >Paket Travel</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Member Platform</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Transaksi</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto gap-3">
+            <ul class="nav-item dropdown ps-0">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle d-flex align-items-center gap-2"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  src="https://ui-avatars.com/api/?name=Muhammad Yunus"
+                  alt=""
+                  class="avatar rounded-circle"
+                  style="width: 26px; height: 26px; object-fit: cover"
+                />
+                <p class="m-0">Muhammad Yunus</p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    href="{{ route('logout') }}"
+                    class="dropdown-item d-flex align-items-center justify-content-between gap-2"
+                    onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"
+                  >
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="dashboard py-5">
+      <div class="container">
+        <h2 class="text-dark fw-semibold mb-3">
+          Hai, Selamat Datang Kembali Admin
+        </h2>
+      </div>
+    </section>
+
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

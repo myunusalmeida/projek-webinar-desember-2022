@@ -1,0 +1,15 @@
+.navbar {
+    border-bottom: 1px solid #e6e6e6;
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $gray-color;
+
+                &.active, &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

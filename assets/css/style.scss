@@ -1,0 +1,14 @@
+@import 'fonts';
+@import 'variables';
+@import 'global';
+
+// components
+@import 'components/button';
+@import 'components/input';
+@import 'components/text';
+@import 'components/navbar';
+@import 'components/card-travel';
+
+// pages
+@import 'pages/detail-page';
+@import 'pages/dashboard';

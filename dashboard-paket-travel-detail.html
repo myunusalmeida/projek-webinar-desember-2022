@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outdoor — Southeast Asia&#x27;s Leading Travel Platform</title>
+    <link
+      rel="stylesheet"
+      href="assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/icons/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a href="." class="navbar-brand fw-semibold text-primary">Outdoor</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ms-0 ms-md-5" id="navbarToggle">
+          <ul
+            class="navbar-nav align-items-start align-items-md-center mb-3 mb-md-0 gap-3"
+          >
+            <div class="nav-item d-none d-md-block">
+              <div
+                style="
+                  width: 1px;
+                  height: 20px;
+                  background-color: #aeaeae;
+                  content: '';
+                "
+              ></div>
+            </div>
+            <li class="nav-item">
+              <a href="dashboard.html" class="nav-link">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a href="dashboard-paket-travel.html" class="nav-link active"
+                >Paket Travel</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Member Platform</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Transaksi</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto gap-3">
+            <ul class="nav-item dropdown ps-0">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle d-flex align-items-center gap-2"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                <img
+                  src="https://ui-avatars.com/api/?name=Muhammad Yunus"
+                  alt=""
+                  class="avatar rounded-circle"
+                  style="width: 26px; height: 26px; object-fit: cover"
+                />
+                <p class="m-0">Muhammad Yunus</p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    href="{{ route('logout') }}"
+                    class="dropdown-item d-flex align-items-center justify-content-between gap-2"
+                    onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();"
+                  >
+                    Logout
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="dashboard travel-lists py-5">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between mb-5">
+            <div class="d-flex align-items-center gap-3">
+              <a
+                href="#"
+                style="width: 34px; height: 34px"
+                class="btn btn-light d-flex align-items-center justify-content-center"
+              >
+                <i class="bx bx-arrow-back"></i>
+              </a>
+              <h3 class="text-dark fw-semibold m-0">Bromo Resort</h3>
+            </div>
+            <a href="#" class="btn btn-warning text-white d-flex align-items-center gap-2">
+                <i class="bx bx-edit"></i> Edit
+            </a>
+        </div>
+
+        <div class="mb-3">
+          <h6 class="fw-semibold">Deskripsi</h6>
+          <p class="text-secondary">
+            Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut
+            Kaldera Tengger, adalah sebuah gunung berapi aktif di Jawa Timur,
+            Indonesia. Gunung ini memiliki ketinggian 2.329 meter di atas
+            permukaan laut dan berada dalam empat wilayah kabupaten, yakni
+            Kabupaten Probolinggo, Kabupaten Pasuruan, Kabupaten Lumajang, dan
+            Kabupaten Malang. <br />
+            <br />Gunung Bromo terkenal sebagai objek wisata utama di Jawa
+            Timur. Sebagai sebuah objek wisata, Bromo menjadi menarik karena
+            statusnya sebagai gunung berapi yang masih aktif. Gunung Bromo
+            termasuk dalam kawasan Taman Nasional Bromo Tengger Semeru.Nama
+            Bromo berasal dari nama dewa utama dalam agama Hindu, Brahma.
+          </p>
+        </div>
+        <div class="row mb-2">
+          <div class="col-3 text-secondary">Harga</div>
+          <div class="col-9"><p class="m-0 fw-normal">: Rp. 200.000</strong></div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-3 text-secondary">Lama Hari</div>
+          <div class="col-9"><p class="m-0 fw-normal">: 4 Hari</strong></div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-3 text-secondary">Jumlah Lokasi</div>
+          <div class="col-9"><p class="m-0 fw-normal">: 4 Lokasi</strong></div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-3 text-secondary">Max Guest</div>
+          <div class="col-9"><p class="m-0 fw-normal">: 8 Guest</strong></div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-3 text-secondary">Tipe Trip</div>
+          <div class="col-9"><p class="m-0 fw-normal">: Family Trip</strong></div>
+        </div>
+        <div class="row">
+            <h6 class="fw-semibold mb-3">Gambar</h6>
+            <div class="col-md-4">
+                <div class="dashboard-img-travel position-relative">
+                    <img src="assets/images/header-image.jpg" class="rounded-3" alt="">
+                    <button class="btn btn-danger d-flex align-items-center justify-content-center position-absolute" style="top: 10px; right: 10px">
+                        <i class="bx bx-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex align-items-center justify-content-center" style="height: 260px">
+                    <a href="#" class="btn btn-light"><i class="bx bx-plus"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
